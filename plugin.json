@@ -12,11 +12,12 @@
   ],
   "disabledInPublish": false,
   "displayName": {
-    "default": "VSCode Lite Edit"
+    "default": "Ignore files Editor",
+    "zh_CN": "忽略文件编辑器"
   },
   "description": {
-    "default": "This is a plugin build for theme VSCode Lite Edit",
-    "zh_CN": "这是一个为主题VSCode Lite Edit构建的插件"
+    "default": "An editor for builtin ignore files",
+    "zh_CN": "内置忽略文件编辑器"
   },
   "readme": {
     "default": "README.md",
@@ -30,9 +31,5 @@
       "https://blog.emptylight.cn/sponsor"
     ]
   },
-  "keywords": [
-    "VSCE",
-    "VSCE主题",
-    "VSCE theme"
-  ]
+  "keywords": []
 }
