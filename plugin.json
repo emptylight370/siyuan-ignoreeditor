@@ -1,0 +1,38 @@
+{
+  "name": "siyuan-ignoreeditor",
+  "author": "Emptylight",
+  "url": "https://github.com/emptylight370/siyuan-ignoreeditor",
+  "version": "0.0.1",
+  "minAppVersion": "3.4.1",
+  "backends": [
+    "all"
+  ],
+  "frontends": [
+    "all"
+  ],
+  "disabledInPublish": false,
+  "displayName": {
+    "default": "VSCode Lite Edit"
+  },
+  "description": {
+    "default": "This is a plugin build for theme VSCode Lite Edit",
+    "zh_CN": "这是一个为主题VSCode Lite Edit构建的插件"
+  },
+  "readme": {
+    "default": "README.md",
+    "zh_CN": "README_zh_CN.md"
+  },
+  "funding": {
+    "openCollective": "",
+    "patreon": "",
+    "github": "",
+    "custom": [
+      "https://blog.emptylight.cn/sponsor"
+    ]
+  },
+  "keywords": [
+    "VSCE",
+    "VSCE主题",
+    "VSCE theme"
+  ]
+}
