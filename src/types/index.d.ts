@@ -112,10 +112,7 @@ interface Window {
         ws: any;
         languages: any;
     };
-    _sy_plugin_sample: {
-        [key: string]: any;
-    };
-    _plugin_vscodelite_edit: {
+    _plugin_ignore_editor: {
         [key: string]: any;
     };
 }

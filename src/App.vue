@@ -55,8 +55,8 @@ onMounted(() => {
 });
 
 onMounted(() => {
-  window._sy_plugin_sample = {};
-  window._sy_plugin_sample.openSetting = openSetting;
+  window._plugin_ignore_editor = {};
+  window._plugin_ignore_editor.openSetting = openSetting;
 });
 </script>
 

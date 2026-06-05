@@ -1,3 +1,7 @@
 {
-  "addTopBarIcon": "PluginSampleViteVue"
+  "addTopBarIcon": "PluginSampleViteVue",
+  "settingTitle": "Set ignore files",
+  "viewUserGuide": "The textarea below shows the file content. Refer to the user guide for syntax details.",
+  "indexignore": "Ignore index",
+  "saveIndexignore": "Save ignore index file"
 }

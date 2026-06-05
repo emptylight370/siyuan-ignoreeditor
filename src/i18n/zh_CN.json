@@ -1,3 +1,7 @@
 {
-  "addTopBarIcon": "PluginSampleViteVue"
+  "addTopBarIcon": "PluginSampleViteVue",
+  "settingTitle": "设置忽略文件",
+  "viewUserGuide": "以下的输入框为文件内容，具体设置语法参考用户指南",
+  "indexignore": "忽略索引",
+  "saveIndexignore": "保存忽略索引文件"
 }
