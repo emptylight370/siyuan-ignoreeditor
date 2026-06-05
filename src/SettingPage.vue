@@ -1,18 +1,19 @@
 <template>
   <div class="b3-dialog--open">
-    <div class="b3-dialog" style="z-index: 21;">
+    <div class="b3-dialog" style="z-index: 21">
       <div class="b3-dialog__scrim" @click="closeSetting"></div>
-      <div class="b3-dialog__container " style="width: 90vw; height: 90vh; left: auto; top: auto; max-width: 1280px;">
+      <div class="b3-dialog__container" style="width: 90vw; height: 90vh; left: auto; top: auto; max-width: 1280px">
         <svg class="b3-dialog__close">
           <use xlink:href="#iconCloseRound"></use>
         </svg>
         <div class="resize__move b3-dialog__header fn__none" onselectstart="return false;"></div>
         <div class="b3-dialog__body">
-          <h2>{{ plugin.i18n.settingTitle }}</h2>
-          <p>{{ plugin.i18n.viewUserGuide }}</p>
-          <p>{{ plugin.i18n.indexignore }}</p>
+          <h2>{{ plugin.i18n?.settingTitle }}</h2>
+          <p>{{ plugin.i18n?.viewUserGuide }}</p>
+          <hr />
+          <h3>{{ plugin.i18n?.indexignore }}</h3>
           <SyTextarea v-model="ignoreindex" />
-          <SyButton @click="saveIgnoreIndex">{{ plugin.i18n.saveIndexignore }}</SyButton>
+          <SyButton @click="saveIgnoreIndex">{{ plugin.i18n?.saveIndexignore }}</SyButton>
         </div>
         <div class="resize__rd"></div>
         <div class="resize__ld"></div>
@@ -49,11 +50,12 @@ async function loadIgnoreIndex() {
 }
 
 async function saveIgnoreIndex() {
-  await putFile('/data/.siyuan/indexignore', false, ignoreindex.value);
+  const blob = new Blob([ignoreindex.value], { type: 'text/plain' });
+  await putFile('/data/.siyuan/indexignore', false, blob);
 }
 
 const closeSetting = () => {
-  const settingEl = document.querySelector('.b3-dialog--open');
+  const settingEl = document.querySelector('.ignore-setting');
   if (settingEl) {
     settingEl.remove();
   }

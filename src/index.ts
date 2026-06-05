@@ -2,8 +2,6 @@ import { Plugin, getFrontend } from 'siyuan';
 import '@/index.scss';
 import PluginInfoString from '@/../plugin.json';
 import { destroy, init } from '@/main';
-import { createApp } from 'vue';
-import SettingPage from './SettingPage.vue';
 
 let PluginInfo = {
     version: '',
@@ -54,11 +52,6 @@ export default class PluginVSCE extends Plugin {
     }
 
     openSetting() {
-        const div = document.createElement('div');
-        div.classList.toggle('vsce-setting');
-        div.id = this.name;
-        const setting = createApp(SettingPage);
-        setting.mount(div);
-        document.body.appendChild(div);
+        window._plugin_ignore_editor.openSetting();
     }
 }

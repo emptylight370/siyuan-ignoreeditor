@@ -63,6 +63,7 @@ export default defineConfig(({ mode }) => {
           {
             src: './src/i18n/**',
             dest: './i18n/',
+            rename: { stripBase: 2 },
           },
         ],
       }),
