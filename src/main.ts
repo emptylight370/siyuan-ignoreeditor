@@ -1,7 +1,6 @@
 import { Plugin } from 'siyuan';
 import { createApp } from 'vue';
 import App from './App.vue';
-import InitApp from './InitApp.vue';
 
 let plugin = null;
 export function usePlugin(pluginProps?: Plugin): Plugin {
@@ -15,8 +14,7 @@ export function usePlugin(pluginProps?: Plugin): Plugin {
     return plugin;
 }
 
-// let app = null;
-let initApp = null;
+let app = null;
 export function init(plugin: Plugin) {
     // bind plugin hook
     usePlugin(plugin);
@@ -24,16 +22,13 @@ export function init(plugin: Plugin) {
     const div = document.createElement('div');
     div.classList.toggle('plugin-sample-vite-vue-app');
     div.id = this.name;
-    // app = createApp(App);
-    // app.mount(div);
-    // document.body.appendChild(div);
-    initApp = createApp(InitApp);
-    initApp.mount(div);
+    app = createApp(App);
+    app.mount(div);
+    document.body.appendChild(div);
 }
 
 export function destroy() {
-    // app.unmount();
-    initApp.unmount();
+    app.unmount();
     const div = document.getElementById(this.name);
     document.body.removeChild(div);
 }
