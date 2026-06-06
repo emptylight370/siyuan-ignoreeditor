@@ -42,12 +42,14 @@ export default class PluginVSCE extends Plugin {
             this.isElectron = false;
         }
 
-        console.log('Plugin loaded, the plugin is ', this);
+        // console.log('Plugin loaded, the plugin is ', this);
+        console.log('Plugin loaded');
 
         init(this);
     }
 
     onunload() {
+        console.log('Plugin unloaded');
         destroy();
     }
 

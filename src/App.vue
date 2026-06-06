@@ -16,7 +16,7 @@ const openSetting = () => {
 };
 
 const plugin = usePlugin();
-console.log('plugin is ', plugin);
+// console.log('plugin is ', plugin);
 
 // add top bar button
 plugin.addTopBar({

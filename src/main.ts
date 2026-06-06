@@ -4,7 +4,7 @@ import App from './App.vue';
 
 let plugin = null;
 export function usePlugin(pluginProps?: Plugin): Plugin {
-    console.log('usePlugin', pluginProps, plugin);
+    // console.log('usePlugin', pluginProps, plugin);
     if (pluginProps) {
         plugin = pluginProps;
     }
@@ -20,7 +20,7 @@ export function init(plugin: Plugin) {
     usePlugin(plugin);
 
     const div = document.createElement('div');
-    div.id = this.name;
+    div.id = usePlugin().name;
     app = createApp(App);
     app.mount(div);
     document.body.appendChild(div);
@@ -28,6 +28,6 @@ export function init(plugin: Plugin) {
 
 export function destroy() {
     app.unmount();
-    const div = document.getElementById(this.name);
-    document.body.removeChild(div);
+    const div = document.getElementById(usePlugin().name);
+    if (div) document.body.removeChild(div);
 }
