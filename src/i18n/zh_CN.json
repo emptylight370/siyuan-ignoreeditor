@@ -1,7 +1,19 @@
 {
   "addTopBarIcon": "PluginSampleViteVue",
   "settingTitle": "设置忽略文件",
-  "viewUserGuide": "以下的输入框为文件内容，具体设置语法参考用户指南",
+  "viewUserGuide": "以下的输入框为文件内容，具体设置语法参考用户指南。下方链接可以跳转到用户指南。",
   "indexignore": "忽略索引",
-  "saveIndexignore": "保存忽略索引文件"
+  "saveIndexignore": "保存忽略索引文件",
+  "searchignore": "忽略搜索",
+  "saveSearchignore": "保存忽略搜索文件",
+  "refsearchignore": "忽略引用",
+  "saveRefsearchignore": "保存忽略引用文件",
+  "syncignore": "忽略同步",
+  "saveSyncignore": "保存忽略同步文件",
+  "reloadIgnoreFile": "刷新忽略文件",
+  "ugLink": "用户指南链接",
+  "ugIndexignoreLink": "siyuan://blocks/20240119205452-o8xp4ve",
+  "ugSearchignoreLink": "siyuan://blocks/20240119205543-hknwwrl",
+  "ugRefignoreLink": "siyuan://blocks/20240119205543-hknwwrl",
+  "ugSyncignoreLink": "siyuan://blocks/20210928094544-vg2c2ts"
 }

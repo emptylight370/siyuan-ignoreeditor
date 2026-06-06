@@ -111,6 +111,11 @@ interface Window {
         user: any;
         ws: any;
         languages: any;
+        config: {
+            sync: {
+                enabled: boolean;
+            };
+        };
     };
     _plugin_ignore_editor: {
         [key: string]: any;

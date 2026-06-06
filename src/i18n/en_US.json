@@ -1,7 +1,19 @@
 {
   "addTopBarIcon": "PluginSampleViteVue",
   "settingTitle": "Set ignore files",
-  "viewUserGuide": "The textarea below shows the file content. Refer to the user guide for syntax details.",
+  "viewUserGuide": "The textarea below shows the file content. Refer to the user guide for syntax details. You can click the link to open the user guide in SiYuan.",
   "indexignore": "Ignore index",
-  "saveIndexignore": "Save ignore index file"
+  "saveIndexignore": "Save ignore index file",
+  "searchignore": "Ignore search",
+  "saveSearchignore": "Save ignore search file",
+  "refsearchignore": "Ignore reference",
+  "saveRefsearchignore": "Save ignore reference file",
+  "syncignore": "Ignore sync",
+  "saveSyncignore": "Save ignore sync file",
+  "reloadIgnoreFile": "Refresh ignore file",
+  "ugLink": "User Guide Link",
+  "ugIndexignoreLink": "siyuan://blocks/20240119211017-1vbbt95",
+  "ugSearchignoreLink": "siyuan://blocks/20240119212048-0huuevw",
+  "ugRefignoreLink": "siyuan://blocks/20240119212048-0huuevw",
+  "ugSyncignoreLink": "siyuan://blocks/20210928101257-l27t5uo"
 }
