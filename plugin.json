@@ -1,0 +1,34 @@
+{
+  "name": "siyuan-ignoreeditor",
+  "url": "https://github.com/emptylight370/siyuan-ignoreeditor",
+  "author": "Emptylight",
+  "backends": [
+    "all"
+  ],
+  "frontends": [
+    "all"
+  ],
+  "disabledInPublish": false,
+  "icon": "icon.png",
+  "preview": "preview.png",
+  "readme": {
+    "default": "README.md",
+    "zh-CN": "README.zh-CN.md"
+  },
+  "funding": {
+    "custom": [
+      "https://blog.emptylight.cn/sponsor"
+    ]
+  },
+  "version": "0.1.0",
+  "minAppVersion": "2.12.2",
+  "displayName": {
+    "default": "Ignore files Editor",
+    "zh-CN": "忽略文件编辑器"
+  },
+  "description": {
+    "default": "An editor for builtin ignore files",
+    "zh-CN": "内置忽略文件编辑器"
+  },
+  "keywords": []
+}
